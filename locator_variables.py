@@ -25,12 +25,12 @@ class Locators:
     nav_home_direct = (By.XPATH, ".//div[contains(@class, 'AppHeader_header__logo')]//a[@href='/']")  # Логотип
 
     # Поля в личном кабинете
-    input_email_personal = (By.XPATH, ".//div/ul/li[2]/div/div/input")
+    input_email_personal = (By.XPATH, ".//input[@name='name' and @type='text' and @disabled]")
 
     # Разделы
-    section_bulki = (By.XPATH, "//div[contains(@class, 'tab_tab__1SPyG') and contains(., 'Булки')]")
-    section_sous = (By.XPATH, "//div[contains(@class, 'tab_tab__1SPyG') and contains(., 'Соусы')]")
-    section_nachinka = (By.XPATH, "//div[contains(@class, 'tab_tab__1SPyG') and contains(., 'Начинки')]")
+    section_bulki = (By.XPATH, "//div[contains(@class, 'tab_tab') and contains(., 'Булки')]")
+    section_sous = (By.XPATH, "//div[contains(@class, 'tab_tab') and contains(., 'Соусы')]")
+    section_nachinka = (By.XPATH, "//div[contains(@class, 'tab_tab') and contains(., 'Начинки')]")
 
     # Проверки
     url_login = "https://stellarburgers.nomoreparties.site/login"
